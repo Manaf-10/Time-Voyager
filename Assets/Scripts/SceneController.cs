@@ -32,10 +32,7 @@ public class SceneController : MonoBehaviour
 
     public void Play()
     {
-        if (SaveSystem.HasSave())
-            SaveSystem.ContinueGame();
-        else
-            SceneManager.LoadScene(firstLevelScene);
+        SceneManager.LoadScene(firstLevelScene);
     }
 
     public void StartGame()
